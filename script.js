@@ -65,15 +65,15 @@ const barbearia = {
     return pedido
   }
   
-  function atualizaPedido(lista, id, valor, tipo) {
-    let newLista = barbearia[lista]
-    for(let i = 0; i < newLista.length;i++){
-      if(id == newLista[i].id){
-        newLista[i].tipo = tipo
-        newLista[i].valor = valor
+  function atualizaServico(lista, id, valor, tipo) {
+    
+    for(let i = 0; i < lista.length;i++){
+      if(id == lista[i].id){
+        lista[i].tipo = tipo
+        lista[i].valor = valor
       }
     }
-    return newLista
+    return lista
     }
   
   
@@ -83,6 +83,7 @@ const barbearia = {
     let valor = pedido.pedidoCortePreco + pedido.pedidoBarbaPreco
     return valor
   }
+  console.log(atualizaServico(barbearia.cortes,1,12,'Tigela'))
   
   
   
