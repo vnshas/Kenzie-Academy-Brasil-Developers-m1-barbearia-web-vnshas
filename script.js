@@ -65,7 +65,7 @@ const barbearia = {
     return pedido
   }
   
-  function atualizaServico(lista, id, valor, tipo) {
+  function atualizaPedido(lista, id, valor, tipo) {
     
     for(let i = 0; i < lista.length;i++){
       if(id == lista[i].id){
