@@ -83,7 +83,7 @@ const barbearia = {
     let valor = pedido.pedidoCortePreco + pedido.pedidoBarbaPreco
     return valor
   }
-  console.log(atualizaServico(barbearia.cortes,1,12,'Tigela'))
+ 
   
   
   
